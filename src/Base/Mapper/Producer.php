@@ -3,11 +3,11 @@
 namespace Base\Mapper;
 
 use Base\Component\DataMapper;
-use Base\Entity\Producer;
+use Base\Entity\Producer as ProducerEntity;
 
 class Producer extends DataMapper
 {
-    public function store(Producer $producer)
+    public function store(ProducerEntity $producer)
     {
         $sql = "UPDATE {$this->table}
                     SET name = :name
